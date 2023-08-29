@@ -2,11 +2,11 @@
 Play Youtube in (Neo)vim
 
 ## Installation
-Youtube playback uses [mps-youtube](https://github.com/mps-youtube/mps-youtube), so that must be installed first. For example:
+Youtube playback uses [yewtube](https://github.com/mps-youtube/yewtube), so that must be installed first. For example:
 
     brew install mpv # OSX
-    pip install youtube_dl
-    pip install mps-youtube
+    pip install yt-dlp
+    pip install yewtube
     
 To install the plugin, you can use a plugin manager as follows:
 
@@ -20,6 +20,6 @@ To install the plugin, you can use a plugin manager as follows:
 You can customize behavior by adding to your `.vimrc`:
 
     " Location of mpsyt
-    let g:VimYoutube_mpsyt = '~/anaconda3/bin/mpsyt'
+    let g:VimYoutube_yewtube = '~/anaconda3/bin/yt'
     " Size of window
     let g:VimYoutube_size = 10

@@ -8,14 +8,14 @@ if !exists('g:VimYoutube_size')
   let g:VimYoutube_size = 10
 endif
 
-if !exists('g:VimYoutube_mpsyt')
-  let g:VimYoutube_mpsyt = 'mpsyt'
+if !exists('g:VimYoutube_yewtube')
+  let g:VimYoutube_yewtube = 'yt'
 endif
 
 fun! s:openyt()
   if !bufexists('Youtube')
     exe g:VimYoutube_size . ' new'
-    exe 'terminal' . g:VimYoutube_mpsyt
+    exe 'terminal' . g:VimYoutube_yewtube
     exe 'file Youtube'
     exe 'startinsert'
 
